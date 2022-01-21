@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Blackpearl';
+    src:  url('./Blackpearl-vPxA.ttf') format('truetype'); 
+  }  
+/* html/body */
+body{
+    background:url('img/fish-background.jpg');
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    text-align: center;
+}
+/* Header */
+header{
+        display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #eaffff;
+    background-color: #257d79d9;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: max(20px, 1.5vw);
+    gap: 10px;
+
+}
+#sub-header-left{
+   margin-left: 1.3vw; 
+}
+
+
+.header-div{
+    flex: 1;
+}
+#sub-header-center{
+    display: flex;
+    justify-content: center;
+}
+#sub-header-right{
+    display: flex;
+    justify-content: flex-end;
+}
+header #sub-header-left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 4px;
+
+}
+header .res-icon{
+    height: 50px;
+    width: 50px;
+
+}
+header h1{
+    font-family: 'Blackpearl';
+    margin: 0 0 0 5px;
+    font-size: max(25px, 2vw);
+    color: black;
+    text-shadow: 0 0 9px white;
+}
+nav{
+    display: flex;
+    gap: 3vw;
+}
+header button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border: 3px solid #257d79d9;
+    border-width: 0 0 3px;
+    opacity: 0.95;
+}
+.active, header button:hover{
+    transition-delay: 100ms;
+    border: 3px solid white;
+    border-width: 0 0 3px;
+    opacity: 1
+}
+header .icons{
+    display: flex;
+    margin-right: 2vw;
+}
+header .icon{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+header .icon:hover{
+    transform: scale(1.1);
+}
+header .icon:active{
+    transform: scale(1);
+}
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3vw;
+    color: white;
+    width: 100%;
+    background: #351903d6;
+    flex: 1;
+    padding-bottom: 2vw;
+}
+main * {
+    margin: 0;
+}
+.main-res-icon{
+    height: 6vw;
+    width: 6vw;
+    margin-top: 3vw;
+}
+.welcome{
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+}
+.res-name{
+    font-family: 'Blackpearl';
+    text-shadow: -4px 2px 0 #ca8858, -2px 2px 0 #ca8858, 2px -2px 0 #ca8858, -2px -2px 0 #ca8858;
+}
+.description{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5vw;
+    border: 2px dashed;
+    width: fit-content;
+    border-width: 3px 0 0 0;
+    margin-top: 2vw;
+}
+.book-table-btn{
+    background: none;
+    color: inherit;
+    border: 0.1px solid white;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 1.2vw;
+    margin: 1vw;
+    padding: 0.4vw 3vw;
+    border-radius: 10px;
+}
+.book-table-btn:hover{
+    transition-delay: 40ms;
+    transform: scale(1.02);
+    background-color: #ffffff26;
+}
+.book-table-btn:active{
+    transform: scale(1);
+}
+/* Menu */
+.menu-main{
+    background: url('img/menu.jpg');
+}
+.no-background{
+    background: none;
+}
+.menu-header{
+    font-family:'Blackpearl' ;
+    color: #c6a37f;
+    border: 3px dashed #c6a37f;
+    border-width: 0 0 3px;
+}
+.menu-content{
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.menu-div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 2px solid #c6a37f;
+    margin: 5vw;
+    border-radius: 35px;
+    background: #00000066;
+}
+.menu-content div{
+    color: #c6a37f;
+    font-size: 2vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 1vw;
+}
+.menu-content div div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1vw;
+    text-align: initial;
+}
+.prices {
+    color: lightcoral !important;
+}
+.menu-div h2 {
+    font-family: 'Blackpearl';
+    letter-spacing: -4px;
+    font-size: 3vw;
+    border-bottom: 3px solid;
+    background-color: #c6a37f;
+    border-radius: 30px 30px 0 0;
+    color: black;
+}
+/* About us */
+.about-header{
+    display: flex;
+    align-items: center;
+}
+.about-hero{
+    font-family: 'Blackpearl';
+    font-size: 3vw;
+    color: tomato;
+    text-shadow: 3px 3px 0 #000000, -3px -3px 0 black, 3px -3px 0 #000000, -3px 3px 0 #000000;
+
+}
+.about-header .pirate-img{
+    height: 8vw;
+    width: 8vw;
+}
+.place-taker{
+    width: 8vw;
+}
+.details-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex: 1;
+}
+.details-div h4{
+    color: teal;
+    border: 3px solid teal;
+    border-width: 0 0 3px;
+}
+.details-div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.hours-para{
+    margin-top: 3vw;
+    line-height: 1vw;
+    text-align: left;
+}
+.address-para{
+    margin: 1vw;
+}
+iframe{
+    height: 15vw;
+    width: 20vw;
+    border:0;
+}
+.para{
+    font-size: 1.2vw;
+    max-width: 50vw;
+    margin-top: 1.2vw;
+
+}
+/* Footer */
+footer{
+    opacity: 0.8;
+    background-color: #24292f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    width: 100%;
+    padding-bottom: 3px;
+}
+footer img{
+    height: 40px;
+    width: 40px;
+    filter: brightness(0) invert(1);
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+.gitHub-name:hover{
+    transform: scale(1.1);
+}
